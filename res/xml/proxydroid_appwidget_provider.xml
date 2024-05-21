@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="48.0dip" android:minHeight="48.0dip" android:updatePeriodMillis="600000" android:initialLayout="@layout/proxydroid_appwidget"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

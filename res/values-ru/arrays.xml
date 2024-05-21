@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="presets_list">
+        <item>Пусто</item>
+        <item>Localhost</item>
+        <item>Intranet</item>
+        <item>Маршрут CHN</item>
+    </string-array>
+</resources>

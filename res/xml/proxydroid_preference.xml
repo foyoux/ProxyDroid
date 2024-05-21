@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/function_cat">
+        <SwitchPreference android:title="@string/service_controller" android:key="isRunning" android:summary="@string/service_summary" />
+        <ListPreference android:title="@string/profile" android:key="profile" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/proxy_cat">
+        <CheckBoxPreference android:title="@string/pac" android:key="isPAC" android:summary="@string/pac_summary" android:defaultValue="false" />
+        <EditTextPreference android:title="@string/host" android:key="host" android:summary="@string/host_summary" />
+        <EditTextPreference android:title="@string/port" android:key="port" android:summary="@string/port_summary" android:defaultValue="3128" />
+        <ListPreference android:entries="@array/proxy_type_entry" android:title="@string/proxy_type" android:key="proxyType" android:defaultValue="http" android:entryValues="@array/proxy_type_value" />
+        <CheckBoxPreference android:title="@string/auto_connect" android:key="isAutoConnect" android:summary="@string/auto_connect_summary" />
+        <com.ksmaze.android.preference.ListPreferenceMultiSelect android:entries="@array/ssid_default_entries" android:title="@string/ssid" android:key="ssid" android:summary="@string/ssid_summary" android:defaultValue="" android:dialogTitle="@string/ssid" android:entryValues="@array/ssid_default_values" />
+        <com.ksmaze.android.preference.ListPreferenceMultiSelect android:entries="@array/excluded_ssid_default_entries" android:title="@string/excluded_ssid" android:key="excludedSsid" android:summary="@string/excluded_ssid_summary" android:defaultValue="" android:dialogTitle="@string/excluded_ssid" android:entryValues="@array/excluded_ssid_default_values" />
+        <Preference android:title="@string/set_bypass" android:key="bypassAddrs" android:summary="@string/set_bypass_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/user_cat">
+        <CheckBoxPreference android:title="@string/auth" android:key="isAuth" android:defaultValue="false" />
+        <EditTextPreference android:title="@string/user" android:key="user" android:summary="@string/user_summary" />
+        <EditTextPreference android:password="true" android:title="@string/password" android:key="password" android:summary="@string/password_summary" />
+        <CheckBoxPreference android:title="@string/ntlm" android:key="isNTLM" android:summary="@string/ntlm_summary" />
+        <EditTextPreference android:title="@string/domain" android:key="domain" android:summary="@string/domain_summary" />
+        <EditTextPreference android:title="@string/certificate" android:key="certificate" android:summary="@string/certificate_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/fearute_cat">
+        <CheckBoxPreference android:title="@string/auto_set_proxy" android:key="isAutoSetProxy" android:summary="@string/auto_set_proxy_summary" android:defaultValue="true" />
+        <Preference android:title="@string/proxyed_apps" android:key="proxyedApps" android:summary="@string/proxyed_apps_summary" />
+        <CheckBoxPreference android:title="@string/bypass_apps" android:key="isBypassApps" android:summary="@string/bypass_apps_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notif_cat">
+        <RingtonePreference android:title="@string/notif_ringtone_title" android:key="settings_key_notif_ringtone" android:summary="@string/notif_ringtone_summary" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+        <CheckBoxPreference android:title="@string/notif_vibrate_title" android:key="settings_key_notif_vibrate" android:summary="@string/notif_vibrate_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

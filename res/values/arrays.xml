@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="excluded_ssid_default_entries" />
+    <array name="excluded_ssid_default_values" />
+    <string-array name="presets_list">
+        <item>Blank</item>
+        <item>Localhost</item>
+        <item>Intranet</item>
+        <item>CHN Route</item>
+    </string-array>
+    <string-array name="proxy_type_entry">
+        <item>HTTP</item>
+        <item>HTTPS</item>
+        <item>HTTP-Tunnel</item>
+        <item>SOCKS4</item>
+        <item>SOCKS5</item>
+    </string-array>
+    <string-array name="proxy_type_value">
+        <item>http</item>
+        <item>https</item>
+        <item>http-tunnel</item>
+        <item>socks4</item>
+        <item>socks5</item>
+    </string-array>
+    <array name="ssid_default_entries" />
+    <array name="ssid_default_values" />
+</resources>

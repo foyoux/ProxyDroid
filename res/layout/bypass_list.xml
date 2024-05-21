@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/BypassListView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/BottomLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:color="@android:color/transparent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:color="@android:color/transparent">
+                <TextView android:textSize="13.0sp" android:textColor="@color/button_text_selector" android:gravity="center" android:id="@id/addBypassAddr" android:background="@drawable/button_selector" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="65.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/add_button" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/button_text_selector" android:gravity="center" android:id="@id/presetBypassAddr" android:background="@drawable/button_selector" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="65.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/preset_button" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/button_text_selector" android:gravity="center" android:id="@id/importBypassAddr" android:background="@drawable/button_selector" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="65.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/import_button" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/button_text_selector" android:gravity="center" android:id="@id/exportBypassAddr" android:background="@drawable/button_selector" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="65.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/export_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
